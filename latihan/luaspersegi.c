@@ -3,6 +3,10 @@
 /* Deskripsi: */
 /* Membaca panjang dan lebar persegi (dalam m), menghitung luas persegi (dalam m2) */
 #include <stdio.h>
+int luasPersegi(int p, int l) {
+    return p * l;
+}
+
 int main() {
     float p, l;
     float luas;
@@ -13,11 +17,8 @@ int main() {
     printf("Masukkan lebar: ");
     scanf("%f", &l);
 
-    /* Proses */
-    luas = p * l;
-
     /* Output */
-    printf("Luas persegi: %f m2\n", luas);
+    printf("Luas persegi: %f m2\n", luasPersegi(p, l));
     printf("Akhir program\n");
     return 0;
 }

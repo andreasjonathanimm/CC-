@@ -3,6 +3,10 @@
 /* Deskripsi: */
 /* Membaca panjang rusuk (dalam cm), menghitung volume kubus */
 #include <stdio.h>
+int volumeKubus(int r) {
+    return r * r * r;
+}
+
 int main() {
     float r;
     float volume;
@@ -11,11 +15,8 @@ int main() {
     printf("Masukkan panjang rusuk: ");
     scanf("%f", &r);
 
-    /* Proses */
-    volume = r * r * r;
-
     /* Output */
-    printf("Volume kubus: %f cm3\n", volume);
+    printf("Volume kubus: %f cm3\n", volumeKubus(r));
     printf("Akhir program\n");
     return 0;
 }
